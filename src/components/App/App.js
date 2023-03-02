@@ -17,7 +17,16 @@ const App = () => {
 
   const [isLoading, setIsLoading] = useState(true);
 
+  const aboutProjectRef = useRef(null);
+  const techsRef = useRef(null);
+  const aboutMeRef = useRef(null);
+
+  const location = useLocation();
+
   useEffect(() => {
+    const aboutProjectId = document.getElementById('about-project');
+    aboutProjectRef.current = aboutProjectId;
+
     let isLoaded = false;
   
     const timer = setTimeout(() => {
@@ -35,28 +44,20 @@ const App = () => {
       clearTimeout(timer);
     };
   }, []);
-  
-  const aboutProjectRef = useRef(null);
-  const techsRef = useRef(null);
-  const aboutMeRef = useRef(null);
 
-  const location = useLocation();
-
-  const aboutProjectId = document.getElementById('about-project');
+  useEffect(() => {
+    if (!isLoading && location.state?.scrollToComponent) {
+      aboutProjectRef.current.scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+  }, [isLoading, location.state]);
 
   const navigate = useNavigate();
 
   const handleClick = () => {
     navigate('/', {state: { scrollToComponent: true}});
   };
-
-  useEffect(() => {
-    if (location.state?.scrollToComponent) {
-      aboutProjectRef.current.scrollIntoView({
-        behavior: 'smooth'
-      });
-    }
-  }, [location.state]);
 
   const handleRefClick = (ref) => {
     ref.current.scrollIntoView({
