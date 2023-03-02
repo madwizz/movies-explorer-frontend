@@ -1,0 +1,113 @@
+.techs {
+  background-color: #F5F5F5;
+  padding: 100px 0;
+}
+
+.techs__heading {
+  margin: 0 70px;
+  padding: 0 0 23px 0;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: -0.04em;
+  color: #000000;
+  border-bottom: solid 1px #000000;
+}
+
+.techs__title {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 58px;
+  text-align: center;
+  letter-spacing: -0.04em;
+  color: #000000;
+  margin: 70px auto 26px;
+}
+
+.techs__text {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: -0.04em;
+  color: #000000;
+  margin-bottom: 100px;
+}
+
+.techs__list {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  list-style: none;
+  justify-content: center;
+}
+
+.techs__item {
+  display: flex;
+  background: #E8E8E8;
+  border-radius: 10px;
+  width: 90px;
+  height: 60px;
+  place-items: center;
+}
+
+.techs__p {
+  margin: 0 auto;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: -0.04em;
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .techs__heading {
+    margin: 0 66px 0 50px;
+  }
+  .techs__text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .techs__list {
+    margin: 0 60px;
+    padding: 0;
+  }
+  .techs__item {
+    width: 84px;
+    height: 57px;
+  }
+  .techs__p {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .techs {
+    background-color: white;
+  }
+  .techs__heading {
+    margin: 0 18px 0 18px;
+  }
+  .techs__title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .techs__text {
+    font-size: 11px;
+    line-height: 16px;
+  }
+  .techs__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

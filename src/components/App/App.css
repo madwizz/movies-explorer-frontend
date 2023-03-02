@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Inter', sans-serif;
+  src: url('../../fonts/Inter-Medium.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Inter', sans-serif;
+  src: url('../../fonts/Inter-Regular.ttf') format('ttf');
+}
+
+body {
+  margin: 0;
+}
