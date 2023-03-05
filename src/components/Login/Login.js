@@ -6,10 +6,10 @@ import './Login.css';
 
 import headerLogo from '../../images/logo.svg';
 
-function Login({handleRefClick, aboutProjectRef}) {
+const Login = () => {
   return(
     <section className='login'>
-      <Link to='/#about-project' onClick={() => handleRefClick(aboutProjectRef)} className='login__about-link'>
+      <Link to='/#about-project' className='login__about-link'>
         <img className='login__logo' src={headerLogo} alt='logo'/>
       </Link>
       <h2 className='login__greet'>

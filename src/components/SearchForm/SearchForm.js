@@ -16,9 +16,9 @@ function SearchForm() {
         <div className='search-form__line'></div>
       </form>
       <div className='search-form__group'>
-        <label class="search-form__slider">
+        <label className="search-form__slider">
           <input type="checkbox"/>
-          <span class="search-form__slider-button"/>
+          <span className="search-form__slider-button"/>
         </label>
         <p className='search-form__shorts'>Короткометражки</p>
       </div>

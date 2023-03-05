@@ -6,11 +6,11 @@ import './Register.css';
 
 import headerLogo from '../../images/logo.svg';
 
-const Register = (handleClick) => {
+const Register = () => {
 
   return(
     <section className='register'>
-      <Link to='/' onClick={handleClick} state={{ scrollToComponent: true }} className='register__about-link'>
+      <Link to='/#about-project' className='register__about-link'>
         <img className='register__logo' src={headerLogo} alt='logo'/>
       </Link>
       <h2 className='register__greet'>

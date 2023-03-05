@@ -1,8 +1,8 @@
-import React, { forwardRef } from 'react';
+import React from 'react';
 
 import './Techs.css';
 
-const Techs = forwardRef((_,techsRef) => {
+const Techs = ({techsRef}) => {
   return (
     <section className='techs' id='techs' ref={techsRef}>
       <h3 className='techs__heading'>
@@ -42,6 +42,6 @@ const Techs = forwardRef((_,techsRef) => {
 
     </section>
   )
-})
+}
 
 export default Techs;

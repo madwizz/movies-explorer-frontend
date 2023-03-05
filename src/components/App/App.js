@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 
-import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
 import Main from '../Main/Main'
 import Movies from '../Movies/Movies';
@@ -21,19 +21,14 @@ const App = () => {
   const techsRef = useRef(null);
   const aboutMeRef = useRef(null);
 
-  const location = useLocation();
-
   useEffect(() => {
-    const aboutProjectId = document.getElementById('about-project');
-    aboutProjectRef.current = aboutProjectId;
-
     let isLoaded = false;
   
     const timer = setTimeout(() => {
       if (!isLoaded) {
         setIsLoading(false);
       }
-    }, 1000);
+    }, 2000);
   
     window.onload = () => {
       isLoaded = true;
@@ -44,27 +39,6 @@ const App = () => {
       clearTimeout(timer);
     };
   }, []);
-
-  useEffect(() => {
-    if (!isLoading && location.state?.scrollToComponent) {
-      aboutProjectRef.current.scrollIntoView({
-        behavior: 'smooth'
-      });
-    }
-  }, [isLoading, location.state]);
-
-  const navigate = useNavigate();
-
-  const handleClick = () => {
-    navigate('/', {state: { scrollToComponent: true}});
-  };
-
-  const handleRefClick = (ref) => {
-    ref.current.scrollIntoView({
-      behavior: 'smooth'
-    });
-    // ref.current.focus();
-  }
   
   const handleShowPopup = () => {
     setShowPopup(true);
@@ -83,17 +57,16 @@ const App = () => {
         showPopup={showPopup} 
         handleShowPopup={handleShowPopup} 
         handleHidePopup={handleHidePopup} 
-        handleRefClick={handleRefClick}
         aboutProjectRef={aboutProjectRef}
         aboutMeRef={aboutMeRef}
         techsRef={techsRef}
         />} />
-        <Route path='/movies' element={<Movies showPopup={showPopup} handleShowPopup={handleShowPopup} handleHidePopup={handleHidePopup} aboutProjectRef={aboutProjectRef}/>} />
-        <Route path='/saved-movies' element={<SavedMovies showPopup={showPopup} handleShowPopup={handleShowPopup} handleHidePopup={handleHidePopup} aboutProjectRef={aboutProjectRef}/>} />
+        <Route path='/movies' element={<Movies showPopup={showPopup} handleShowPopup={handleShowPopup} handleHidePopup={handleHidePopup} aboutProjectRef={aboutProjectRef} />} />
+        <Route path='/saved-movies' element={<SavedMovies showPopup={showPopup} handleShowPopup={handleShowPopup} handleHidePopup={handleHidePopup} aboutProjectRef={aboutProjectRef} />} />
         <Route path='/profile' element={<Profile handleShowPopup={handleShowPopup} handleHidePopup={handleHidePopup} aboutProjectRef={aboutProjectRef} />} />
-        <Route path='/signup' element={<Register handleRefClick={handleRefClick} handleClick={handleClick} aboutProjectRef={aboutProjectRef}/>} />
-        <Route path='/signin' element={<Login handleRefClick={handleRefClick} aboutProjectRef={aboutProjectRef}/>} />
-        <Route path='/notFound' element={<NotFound/>} />
+        <Route path='/signup' element={<Register aboutProjectRef={aboutProjectRef} />} />
+        <Route path='/signin' element={<Login aboutProjectRef={aboutProjectRef} />} />
+        <Route path='/notFound' element={<NotFound aboutProjectRef={aboutProjectRef} />} />
       </Routes>
     )}
     </>

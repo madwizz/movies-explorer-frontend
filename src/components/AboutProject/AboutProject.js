@@ -1,8 +1,8 @@
-import React, { forwardRef } from 'react';
+import React from 'react';
 
 import './AboutProject.css';
 
-const AboutProject = forwardRef((_,aboutProjectRef) => {
+const AboutProject = ({aboutProjectRef}) => {
   return (
     <section className='about-project' id='about-project' ref={aboutProjectRef}>
       <h3 className='about-project__heading'>
@@ -51,6 +51,6 @@ const AboutProject = forwardRef((_,aboutProjectRef) => {
       </ul>
     </section>
   )
-})
+}
 
 export default AboutProject;

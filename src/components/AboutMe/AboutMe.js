@@ -1,10 +1,10 @@
-import React, { forwardRef } from 'react';
+import React from 'react';
 
 import './AboutMe.css';
 
 import profilePic from '../../images/profilePic.svg';
 
-const AboutMe = forwardRef((_,aboutMeRef) => {
+const AboutMe = ({aboutMeRef}) => {
   return (
     <section className='about-me' id='about-me' ref={aboutMeRef}>
       <h3 className='about-me__heading'>
@@ -32,6 +32,6 @@ const AboutMe = forwardRef((_,aboutMeRef) => {
       </div>
     </section>
   )
-})
+}
 
 export default AboutMe;

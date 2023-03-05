@@ -8,14 +8,14 @@ import menuIcon from '../../images/menuIcon.svg';
 
 import './Header.css';
 
-const Header = ({handleShowPopup, handleRefClick, aboutProjectRef}) => {
+const Header = ({handleShowPopup}) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   return (
     <header className='header'>
       {isLoggedIn ? (
         <React.Fragment>
-          <Link to='/#about-project' onClick={() => handleRefClick(aboutProjectRef)} className='header__about-link'>
+          <Link to='/#about-project' className='header__about-link'>
             <img className='header__logo' src={headerLogo} alt='Header logo'/>
           </Link>
           <ul className='header__nav'>
@@ -33,7 +33,7 @@ const Header = ({handleShowPopup, handleRefClick, aboutProjectRef}) => {
         </React.Fragment>
       ) : (
         <React.Fragment>
-          <Link to='#about-project' onClick={() => handleRefClick(aboutProjectRef)} className='header__about-link'>
+          <Link to='/#about-project' className='header__about-link'>
             <img className='header__logo' src={headerLogo} alt='Header logo'/>
           </Link>
           <ul className='header__routes'>
