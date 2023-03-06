@@ -12,9 +12,9 @@ const Profile = ({aboutProjectRef, handleRefClick}) => {
         Привет, Виталий!
       </h1>
       <div className='profile__inputs'>
-        <input className='profile__input profile__input_name' placeholder='Имя'/>
+        <input className='profile__input profile__input_name' placeholder='Имя' required/>
         <div className='profile__line'></div>
-        <input className='profile__input profile__input_email' placeholder='Email'/>
+        <input className='profile__input profile__input_email' placeholder='Email' required/>
       </div>
       <div className='profile__buttons'>
         <button className='profile__button profile__button_edit'>

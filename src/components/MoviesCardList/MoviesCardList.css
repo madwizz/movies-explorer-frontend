@@ -12,7 +12,7 @@
   list-style: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1170px) {
   .movies-list__grid {
     grid-template-columns: repeat(2, 339px);
     margin: 0 auto;

@@ -99,7 +99,7 @@
   color: #2BE080;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 413px) {
   .login__logo {
     margin: 56px 141px 50px;
   }

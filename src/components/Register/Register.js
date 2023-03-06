@@ -21,19 +21,19 @@ const Register = () => {
           <div className='register__input-title'>
             Имя
           </div>
-          <input className='register__input' placeholder='Виталий'/>
+          <input className='register__input' placeholder='Виталий' required/>
         </div>
         <div className='register__input-group'>
           <div className='register__input-title'>
             E-mail
           </div>
-          <input className='register__input' placeholder='pochta@yandex.ru'/>
+          <input className='register__input' placeholder='pochta@yandex.ru' required/>
         </div>
         <div className='register__input-group'>
           <div className='register__input-title'>
             Пароль
           </div>
-          <input className='register__input' placeholder='Password'/>
+          <input className='register__input' placeholder='Password' required/>
         </div>
       </div>
       <button className='register__button'>

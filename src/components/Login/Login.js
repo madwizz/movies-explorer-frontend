@@ -20,13 +20,13 @@ const Login = () => {
           <div className='login__input-title'>
             E-mail
           </div>
-          <input className='login__input' placeholder='pochta@yandex.ru'/>
+          <input className='login__input' placeholder='pochta@yandex.ru' required/>
         </div>
         <div className='login__input-group'>
           <div className='login__input-title'>
             Password
           </div>
-          <input className='login__input' placeholder='password'/>
+          <input className='login__input' placeholder='password' required/>
         </div>
       </div>
       <button className='login__button'>

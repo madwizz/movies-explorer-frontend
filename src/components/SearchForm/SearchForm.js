@@ -9,7 +9,7 @@ function SearchForm() {
     <section className='search-form'>
       <form className='search-form__form'>
         <img className='search-form__icon' alt='Magnifying glass' src={icon}/>
-        <input type='text' className='search-form__input' placeholder='Фильм'/>
+        <input type='text' className='search-form__input' placeholder='Фильм' required/>
         <button className='search-form__submit'>
           Найти
         </button>
