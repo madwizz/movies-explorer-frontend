@@ -42,8 +42,8 @@ const Header = ({handleShowPopup}) => {
           </ul>
           <ul className='header__profile-wrap'>
             <Link to='/profile' className='header__profile-wrap_text'>Аккаунт</Link>
-            <Link to='/profile' className='header__profile_wrap_box'>
-              <img className='header__profile_wrap_icon' src={profileIcon} alt='Profile icon link'/>
+            <Link to='/profile' className='header__profile-wrap_box'>
+              <img className='header__profile-wrap_icon' src={profileIcon} alt='Profile icon link'/>
             </Link>
           </ul>
         </React.Fragment>
