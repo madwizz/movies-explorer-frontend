@@ -1,21 +1,3 @@
-/* .popup {
-  display: none;
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 520px;
-  height: 100%;
-  background-color: white;
-  z-index: 999;
-  transition: all 0.3s ease-out;
-}
-
-@media (max-width: 768px) {
-  .popup-menu.show {
-    right: 0;
-  }
-} */
-
 .popup {
   display: none;
   position: fixed;
