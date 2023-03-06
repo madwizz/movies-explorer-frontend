@@ -32,7 +32,7 @@ const MoviesCard = () => {
   };
 
   return(
-    <li className='card'>
+    <div className='card'>
       <div className='card__list'>
         <div className='card__face'>
           <div className='card__button-wrap'>
@@ -54,7 +54,7 @@ const MoviesCard = () => {
           <p className='card__length'>1ч 17м</p>
         </div>
       </div>
-    </li>
+    </div>
   )
 }
 

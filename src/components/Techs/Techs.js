@@ -15,7 +15,6 @@ const Techs = ({techsRef}) => {
         На курсе веб-разработки мы освоили технологии, 
         которые применили <br/> в дипломном проекте.
       </p>
-
       <ul className='techs__list'>
         <li className='techs__item'>
           <p className='techs__p'>HTML</p>
@@ -39,7 +38,6 @@ const Techs = ({techsRef}) => {
           <p className='techs__p'>mongoDB</p>
         </li>
       </ul>
-
     </section>
   )
 }
