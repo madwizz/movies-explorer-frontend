@@ -31,9 +31,12 @@
 @media screen and (max-width: 320px) {
   .promo {
     margin: 0 14px;
+    border-radius: 10px;
   }
   .promo__title {
     font-size: 29px;
     line-height: 37px;
+    max-width: 292px;
+    max-height: 111px;
   }
 }
