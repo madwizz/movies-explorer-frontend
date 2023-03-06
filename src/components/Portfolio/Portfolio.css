@@ -64,7 +64,7 @@
     margin-left: 14px;
   }
   .about-me__links {
-    margin: 40px 14px 70px 14px;
+    margin: 40px 7px 70px;
   }
   .about-me___link {
     gap: 24px;
@@ -72,8 +72,10 @@
   .about-me__link_text {
     font-size: 18px;
     line-height: 28px;
+    max-width: 250px;
+    max-height: 28px;
   }
   .about-me__link-arrow {
-    width: 18px;
+    max-width: 18px;
   }
 }
