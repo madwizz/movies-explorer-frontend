@@ -94,7 +94,7 @@
   padding: 0;
 }
 
-.header__profile-wrap_text {
+.header__profile-wrap-text {
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -106,7 +106,7 @@
   text-decoration: none;
 }
 
-.header__profile-wrap_box {
+.header__profile-wrap-box {
   background-color: #F9F9F9;
   max-width: 26px;
   max-height: 30px;
@@ -117,7 +117,7 @@
   padding: 8px;
 }
 
-.header__profile-wrap_icon {
+.header__profile-wrap-icon {
   max-width: 12px;
   max-height: 14px;
 }

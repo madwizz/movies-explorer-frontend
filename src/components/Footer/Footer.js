@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 
 import './Footer.css';
 
-function Footer() {
+const Footer = () => {
 
   const [year, setYear] = React.useState(new Date().getFullYear());
 

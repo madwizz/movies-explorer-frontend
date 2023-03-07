@@ -41,9 +41,9 @@ const Header = ({handleShowPopup}) => {
             <Link to='/saved-movies' className='header__route'>Сохранённые фильмы</Link>
           </ul>
           <ul className='header__profile-wrap'>
-            <Link to='/profile' className='header__profile-wrap_text'>Аккаунт</Link>
-            <Link to='/profile' className='header__profile-wrap_box'>
-              <img className='header__profile-wrap_icon' src={profileIcon} alt='Profile icon link'/>
+            <Link to='/profile' className='header__profile-wrap-text'>Аккаунт</Link>
+            <Link to='/profile' className='header__profile-wrap-box'>
+              <img className='header__profile-wrap-icon' src={profileIcon} alt='Profile icon link'/>
             </Link>
           </ul>
         </React.Fragment>
