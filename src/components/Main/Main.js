@@ -37,18 +37,22 @@ const Main = ({handleHidePopup, handleShowPopup, showPopup, aboutProjectRef, tec
 
   return (
     <>
-    <Header handleShowPopup={handleShowPopup} aboutProjectRef={aboutProjectRef}/>
-      <main className='main'>
-        <Promo/>
-        <NavTab aboutProjectRef={aboutProjectRef} techsRef={techsRef} aboutMeRef={aboutMeRef}/>
-        <AboutProject id='about-project' aboutProjectRef={aboutProjectRef}/>
-        <Techs id='techs' techsRef={techsRef}/>
-        <AboutMe id='about-me' aboutMeRef={aboutMeRef}/>
-        <Portfolio/>
-        {showPopup && <div className='overlay' onClick={handleHidePopup} />}
-        <PopupMenu showPopup={showPopup} handleHidePopup={handleHidePopup} />
-      </main>
-    <Footer/>
+    <header>
+      <Header handleShowPopup={handleShowPopup} aboutProjectRef={aboutProjectRef}/>
+    </header>
+    <main className='main'>
+      <Promo/>
+      <NavTab aboutProjectRef={aboutProjectRef} techsRef={techsRef} aboutMeRef={aboutMeRef}/>
+      <AboutProject id='about-project' aboutProjectRef={aboutProjectRef}/>
+      <Techs id='techs' techsRef={techsRef}/>
+      <AboutMe id='about-me' aboutMeRef={aboutMeRef}/>
+      <Portfolio/>
+      {showPopup && <div className='overlay' onClick={handleHidePopup} />}
+      <PopupMenu showPopup={showPopup} handleHidePopup={handleHidePopup} />
+    </main>
+    <footer>
+      <Footer/>
+    </footer>
     </>
   )
 }

@@ -15,7 +15,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <section className='footer'>
+    <footer className='footer'>
       <p className='footer__title'>
         Учебный проект Яндекс.Практикум х BeatFilm.
       </p>
@@ -26,7 +26,7 @@ const Footer = () => {
           <a href='https://github.com/madwizz' target='_blank' rel='noreferrer noopener' className='footer__link'>Github</a>
         </ul>
       </div>
-    </section>
+    </footer>
   )
 }
 

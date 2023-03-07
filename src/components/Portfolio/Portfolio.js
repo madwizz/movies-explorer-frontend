@@ -4,7 +4,7 @@ import './Portfolio.css'
 
 import arrowPic from '../../images/arrow.svg';
 
-const Portfolio = ()  {
+const Portfolio = () => {
   return (
     <section className='portfolio'>
       <p className='about-me__portfolio'>Портфолио</p>

@@ -8,7 +8,7 @@ import Header from '../Header/Header';
 import Footer from '../Footer/Footer'
 import PopupMenu from '../PopupMenu/PopupMenu';
 
-function Movies({handleHidePopup, handleShowPopup, showPopup, aboutProjectRef}) {
+const Movies = ({handleHidePopup, handleShowPopup, showPopup, aboutProjectRef}) => {
   return (
     <section className='movies'>
       <Header handleShowPopup={handleShowPopup} aboutProjectRef={aboutProjectRef}/>
