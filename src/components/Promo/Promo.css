@@ -5,6 +5,7 @@
   align-items: center;
   margin: 0 40px;
   padding: 160px 0 151px 0;
+  border-radius: 10px
 }
 
 .promo__title {
@@ -35,7 +36,6 @@
 @media screen and (max-width: 320px) {
   .promo {
     margin: 0 14px;
-    border-radius: 10px;
   }
   .promo__title {
     font-size: 29px;
