@@ -41,7 +41,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 727px) {
   .movies-list__grid {
     grid-template-columns: repeat(1, 300px);
     margin: 0 auto;

@@ -82,7 +82,7 @@
   color: #A0A0A0;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 394px) {
   .card__image {
     max-width: 300px;
     max-height: 168px;
