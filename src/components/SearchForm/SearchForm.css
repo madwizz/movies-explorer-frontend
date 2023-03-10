@@ -57,7 +57,7 @@
   margin: 0 29px;
 }
 
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 1245px) {
   .search-form {
     margin: 80px 30px 120px 30px;
     padding: 19px;
@@ -88,7 +88,7 @@
   align-items: center;
 }
 
-@media screen and (max-width: 729px) {
+@media screen and (max-width: 753px) {
   .search-form {
     margin: 80px 10px 120px 10px;
     padding: 19px;

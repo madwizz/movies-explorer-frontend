@@ -5,7 +5,7 @@
   align-items: center;
   margin: 0 40px;
   padding: 160px 0 151px 0;
-  border-radius: 10px
+  border-radius: 10px 10px 0 0;
 }
 
 .promo__title {

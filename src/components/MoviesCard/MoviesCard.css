@@ -18,6 +18,28 @@
   top: 10px;
 }
 
+@media screen and (max-width: 1170px) {
+  .card__button-wrap {
+    right: -15px;
+  }
+}
+@media screen and (max-width: 769px) {
+  .card__button-wrap {
+    right: 10px;
+  }
+}
+@media screen and (max-width: 727px) {
+  .card__button-wrap {
+    right: -30px;
+  }
+}
+@media screen and (max-width: 394px) {
+  .card__button-wrap {
+    right: 10px;
+  }
+}
+
+
 .card__button {
   border: none;
   background-color: transparent;
