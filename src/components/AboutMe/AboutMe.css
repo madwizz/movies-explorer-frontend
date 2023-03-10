@@ -1,0 +1,134 @@
+.about-me__heading {
+  margin: 0 70px;
+  padding: 100px 0 23px 0;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: -0.04em;
+  color: #000000;
+  border-bottom: solid 1px #000000;
+}
+
+.about-me__bio {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 66px 0 110px 70px;
+  max-width: 600px;
+}
+
+.about-me__name {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 58px;
+  letter-spacing: -0.04em;
+  color: #000000;
+  margin-bottom: 18px;
+}
+
+.about-me__job {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+  mix-blend-mode: normal;
+  margin-bottom: 26px;
+}
+
+.about-me__summary {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #000000;
+  mix-blend-mode: normal;
+  margin-bottom: 99px;
+}
+
+.about-me__photo {
+  border-radius: 10px;
+  max-width: 350px;
+  margin: 66px 0 0 310px;
+}
+
+@media screen and (max-width: 1280px) {
+  .about-me__photo {
+    margin: 66px 0 0 306px;
+    max-width: 270px;
+  }
+}
+
+@media screen and (max-width: 837px) {
+  .about-me__heading {
+    margin: 0 50px 0 50px;
+  }
+  .about-me__bio {
+    margin: 66px 49px 110px 50px;
+    max-width: 348px;
+  }
+  .about-me__photo {
+    max-width: 255px;
+    margin: 66px 0 0 0;
+    padding-left: 70px;
+  }
+  .about-me__name {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .about-me__job {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .about-me__summary {
+    max-width: 364px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.about-me__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media screen and (max-width: 592px) {
+  .about-me__heading {
+    margin: 0 18px 0 18px;
+  }
+  .about-me__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about-me__bio {
+    margin: 40px 24px 70px;
+    max-width: 292px;
+  }
+  .about-me__photo {
+    border-radius: 10px;
+    padding: 0;
+    max-width: 292px;
+    margin: 60px auto 0;
+    order: -1;
+  }
+}
+
+.about-me__github {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  text-decoration: none;
+}
+.about-me__github:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}

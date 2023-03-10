@@ -1,0 +1,143 @@
+.about-project__heading {
+  margin: 0 70px;
+  padding: 100px 0 23px 0;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: -0.04em;
+  color: #000000;
+  border-bottom: solid 1px #000000;
+}
+
+.about-project__row {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  padding: 0;
+  margin-top: 70px;
+}
+
+.about-project__column {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-left: 70px;
+  gap: 26px;
+  padding: 0;
+}
+
+.about-project__column:last-of-type {
+  margin-left: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .about-project__heading {
+    margin: 0 66px 0 50px;
+    padding-top: 90px;
+  }
+  .about-project__row {
+    margin: 70px 50px 0 50px;
+  }
+  .about-project__column {
+    margin-left: 0;
+  }
+}
+
+.about-project__title {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.04em;
+  color: #000000;
+}
+
+.about-project__info {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  max-width: 550px;
+}
+
+.about-project__progress-bar {
+  width: 89%;
+  margin: 110px auto;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  padding: 0;
+  list-style: none;
+}
+
+.about-project__bar-item {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.about-project__week {
+  text-align: center;
+  background-color: #F2F2F2;
+  padding: 9px 0;
+  margin: 0;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.about-project__first-week {
+  background-color: #2BE080;
+  text-align: center;
+  padding: 9px 0;
+  margin: 0;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 592px) {
+  .about-project__heading {
+    margin: 0 18px 0 18px;
+    padding-top: 60px;
+  }
+  .about-project__row {
+    margin: 60px 18px 0 18px;
+    flex-direction: column;
+  }
+  .about-project__column {
+    margin-left: 0;
+  }
+  .about-project__progress-bar {
+    margin: 60px auto;
+  }
+  .about-project__week {
+    padding: 11px 60px;
+  }
+  .about-project__first-week {
+    padding: 11px 10px;
+  }
+}
+
+.about-project__work {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #A0A0A0;
+  margin: 0;
+  padding: 0;
+}
