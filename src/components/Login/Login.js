@@ -9,9 +9,11 @@ import headerLogo from '../../images/logo.svg';
 const Login = () => {
   return(
     <section className='login'>
-      <Link to='/#about-project' className='login__about-link'>
-        <img className='login__logo' src={headerLogo} alt='logo'/>
-      </Link>
+      <div className='login__about-link-wrap'>
+        <Link to='/#about-project' className='login__about-link'>
+          <img className='login__logo' src={headerLogo} alt='logo'/>
+        </Link>
+      </div>
       <h2 className='login__greet'>
         Рады видеть!
       </h2>

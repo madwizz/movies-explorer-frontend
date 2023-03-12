@@ -48,19 +48,24 @@ const App = () => {
   }
 
   return (
-    <>
+    <div className='page'>
     {isLoading ? (
       <Preloader />
     ) : (
       <Routes>
-        <Route path='/' element={<Main 
-        showPopup={showPopup} 
-        handleShowPopup={handleShowPopup} 
-        handleHidePopup={handleHidePopup} 
-        aboutProjectRef={aboutProjectRef}
-        aboutMeRef={aboutMeRef}
-        techsRef={techsRef}
-        />} />
+        <Route 
+          path='/' 
+          element={
+            <Main 
+              showPopup={showPopup} 
+              handleShowPopup={handleShowPopup} 
+              handleHidePopup={handleHidePopup} 
+              aboutProjectRef={aboutProjectRef}
+              aboutMeRef={aboutMeRef}
+              techsRef={techsRef}
+            />
+          } 
+        />
         <Route path='/movies' element={<Movies showPopup={showPopup} handleShowPopup={handleShowPopup} handleHidePopup={handleHidePopup} aboutProjectRef={aboutProjectRef} />} />
         <Route path='/saved-movies' element={<SavedMovies showPopup={showPopup} handleShowPopup={handleShowPopup} handleHidePopup={handleHidePopup} aboutProjectRef={aboutProjectRef} />} />
         <Route path='/profile' element={<Profile handleShowPopup={handleShowPopup} handleHidePopup={handleHidePopup} aboutProjectRef={aboutProjectRef} />} />
@@ -69,7 +74,7 @@ const App = () => {
         <Route path='/notFound' element={<NotFound aboutProjectRef={aboutProjectRef} />} />
       </Routes>
     )}
-    </>
+    </div>
   );
 }
 
